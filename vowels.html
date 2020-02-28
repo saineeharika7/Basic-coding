@@ -1,0 +1,26 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function vowel(){
+var charc=(document.getElementById("first").value);
+var array = ['a','e','i','o','u','A','E','I','O','U'];
+if (array.includes(charc)){
+  document.getElementById("answer").value="vowel";
+}
+else{
+  document.getElementById("answer").value="consonent";
+}
+
+}
+</script>
+</head>
+<body>
+Enter alphabet :<input id ="first"><br>
+<button onclick = "vowel()">vowels and consonents</button><br>
+<input id ="answer">
+
+
+</body>
+</html>
