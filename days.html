@@ -1,0 +1,26 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function day(){
+var days,years,weeks;
+days=Number(document.getElementById("first").value);
+years = days/365;
+ weeks = days/7;
+document.getElementById("answer").value=years;
+document.getElementById("answer1").value=weeks;
+
+
+}
+</script>
+</head>
+<body>
+Enter no.of days:<input id ="first"><br>
+<button onclick = "day()">output</button><br>
+<input id ="answer"><br>
+<input id ="answer1">
+
+
+</body>
+</html>

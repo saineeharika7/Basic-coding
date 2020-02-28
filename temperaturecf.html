@@ -1,0 +1,21 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function temperature(){
+var celcius,fahreinheit;
+celcius=Number(document.getElementById("first").value);
+fahreinheit=(celcius*(9/5))+32;
+document.getElementById("answer").value=fahreinheit;
+
+}
+</script>
+</head>
+<body>
+Enter the temperature:<input id ="first"><br>
+<button onclick = "temperature()">temperature</button><br>
+<input id ="answer">
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function angle(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c =180-(a+b);
+document.getElementById("answer").value=c;
+}
+</script>
+</head>
+<body>
+Enter the first angle:<input id ="first"><br>
+Enter the second angle:<input id ="second"><br>
+<button onclick = "angle()">Angle</button><br>
+<input id ="answer">
+</body>
+</html>

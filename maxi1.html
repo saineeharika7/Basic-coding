@@ -1,0 +1,32 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function maxi(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=Number(document.getElementById("third").value);
+
+if(a>b && a>c){
+document.getElementById("answer").value=a;
+}
+else if(b>a && b>c){
+document.getElementById("answer").value=b;
+
+}
+else{
+  document.getElementById("answer").value=c;
+}
+}
+</script>
+</head>
+<body>
+Enter the first number:<input id ="first"><br>
+Enter the second number:<input id ="second"><br>
+Enter the second number:<input id ="third"><br>
+
+<button onclick = "maxi()">Max</button><br>
+<input id ="answer">
+</body>
+</html>

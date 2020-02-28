@@ -1,0 +1,28 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function si(){
+var p,t,r;
+p=Number(document.getElementById("first").value);
+t=Number(document.getElementById("second").value);
+r=Number(document.getElementById("third").value);
+n=Number(document.getElementById("fourth").value);
+
+var compoundinterest =(p *Math.pow((1 +(r/ (n *100))),(n*t)));
+document.getElementById("answer").value=compoundinterest;
+}
+</script>
+</head>
+<body>
+Enter the first number:<input id ="first"><br>
+Enter the second number:<input id ="second"><br>
+Enter the first number:<input id ="third"><br>
+Enter the first number:<input id ="fourth"><br>
+
+
+<button onclick = "si()">CI</button><br>
+<input id ="answer"><br>
+</body>
+</html>

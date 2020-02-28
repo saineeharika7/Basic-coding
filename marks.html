@@ -1,0 +1,35 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function marks(){
+var a,b,c,d,e,total,average,percentage;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=Number(document.getElementById("third").value);
+d=Number(document.getElementById("fourth").value);
+e=Number(document.getElementById("fifth").value);
+total = (a+b+c+d+e);
+average = total/5;
+percentage =total/100;
+document.getElementById("answer").value=total;
+document.getElementById("answer1").value=average;
+document.getElementById("answer2").value=percentage;
+
+}
+</script>
+</head>
+<body>
+Enter marks1:<input id ="first"><br>
+Enter marks2:<input id ="second"><br>
+Enter marks3:<input id ="third"><br>
+Enter marks4:<input id ="fourth"><br>
+Enter marks5:<input id ="fifth"><br>
+<button onclick = "marks()">marks</button><br>
+<input id ="answer">
+<input id ="answer1">
+<input id ="answer2">
+
+</body>
+</html>

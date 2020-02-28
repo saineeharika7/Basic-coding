@@ -1,0 +1,29 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function circle(){
+var radius,diameter,area,circumference;
+radius=Number(document.getElementById("first").value);
+diameter =2*radius;
+circumference = 2*3.14*radius;
+area = 3.14*radius*radius;
+document.getElementById("answer").value=diameter;
+document.getElementById("answer1").value=circumference;
+
+document.getElementById("answer2").value=area;
+
+}
+</script>
+</head>
+<body>
+Enter the first number:<input id ="first"><br>
+<button onclick = "circle()">output</button><br>
+<input id ="answer">
+<input id ="answer1">
+
+<input id ="answer2">
+
+</body>
+</html>

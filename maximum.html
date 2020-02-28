@@ -1,0 +1,25 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function maxi(){
+var a,b;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+if(a>b){
+document.getElementById("answer").value=a;
+}
+else{
+document.getElementById("answer").value=b;
+
+}
+}
+</script>
+</head>
+<body>
+Enter the first number:<input id ="first"><br>
+Enter the second number:<input id ="second"><br>
+<button onclick = "maxi()">Max</button><br>
+<input id ="answer">
+</body>
+</html>
