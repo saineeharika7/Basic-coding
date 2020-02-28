@@ -1,0 +1,35 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function lettercase(){
+var a =(document.getElementById("first").value);
+var array=[];
+var array2=[];
+for(var i=65;i<91;i++){
+  array.push(i);
+}
+for(var j=97;j<123;j++){
+  array2.push(j);
+  }
+if(array.includes(a.charCodeAt())) {
+  document.getElementById("answer").value="uppercase";
+}
+else if(array2.includes(a.charCodeAt())){
+  document.getElementById("answer").value="lowercase";
+}
+else{
+  document.getElementById("answer").value="not an alphabet";
+}
+}
+</script>
+</head>
+<body>
+Enter alphabet :<input id ="first"><br>
+<button onclick = "lettercase()">letter case</button><br>
+<input id ="answer">
+
+
+</body>
+</html>
