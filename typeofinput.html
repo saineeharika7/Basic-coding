@@ -1,0 +1,29 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+function numtype(){
+var a;
+a=Number(document.getElementById("first").value);
+if(a<0){
+document.getElementById("answer").value="negative";
+}
+else if(a==0){
+document.getElementById("answer").value="zero";
+}
+else{
+document.getElementById("answer").value="positive";
+
+}
+}
+</script>
+</head>
+<body>
+Enter number :<input id ="first"><br>
+<button onclick = "numtype()">typeofnum</button><br>
+<input id ="answer">
+
+
+</body>
+</html>
