@@ -1,0 +1,27 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//60
+function strings(){
+var a,b;
+var count =0;
+a=document.getElementById("first").value;
+b=document.getElementById("second").value;
+for(var i=0;i<a.length;i++){
+if(a[i]==b){
+document.getElementById("answer").value="count of occurance of "+ b + " is " +(count +=1);
+
+}
+}
+}
+</script>
+</head>
+<body>
+Enter the  string:<input id ="first"><br>
+Enter the  character:<input id ="second"><br>
+
+<button onclick = "strings()">output</button><br>
+<input id ="answer">
+</body>
+</html>

@@ -3,11 +3,12 @@
 <html>
 <head>
 <script>
+//27 problem
 function triangle(){
   var angle1 = Number(document.getElementById("first").value);
   var angle2 = Number(document.getElementById("second").value);
   var angle3 = Number(document.getElementById("third").value);
-  if(angle1 == angle2 == angle3){
+  if(angle1 == angle2 && angle2 == angle3){
     document.getElementById("answer").value ="equilateral triangle";
   }
   else if(angle1 == angle2 || angle2 == angle3 || angle1 == angle3){

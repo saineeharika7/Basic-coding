@@ -1,0 +1,35 @@
+<!DOCTYPE.HTML>
+<html>
+<head>
+<script>
+//38
+function numtype(){
+  var num=Number(document.getElementById('first').value);
+
+  switch(num>0)
+      {
+          case true:
+              document.getElementById("answer").value ="positive";
+              break;
+          case false:
+          switch(num<0)
+          {
+              case true:
+                document.getElementById("answer").value ="negative";
+                 break;
+          case false:
+                 document.getElementById("answer").value ="zero";
+                 break;
+               }
+
+      }
+}
+</script>
+</head>
+<body>
+enter your num1:<input id="first"><br>
+
+<button onclick="numtype()">type of number</button><br>
+<input id="answer">
+</body>
+</html>

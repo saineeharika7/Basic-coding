@@ -1,0 +1,23 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//49
+function bitwise1(){
+var a =Number(document.getElementById("first").value);
+var c= a.toString(2);
+var d =c.split("").reverse("").join("");
+document.getElementById("answer").value =d;
+document.getElementById("answer1").value =c;
+
+}
+</script>
+</head>
+<body>
+Enter the  number:<input id ="first"><br>
+
+<button onclick = "bitwise1()">output</button><br>
+Actual output:<input id ="answer1"><br>
+Reversed output:<input id ="answer">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE.HTML>
+<html>
+<head>
+<script>
+function months(){
+var array1 =[1,3,5,7,8,10,12];
+var array2 =[4,6,9,11];
+var array3 =[2];
+var numb =Number(document.getElementById("first").value);
+if(array1.includes(numb)){
+document.getElementById("answer").value ="31";
+}
+else if(array2.includes(numb)){
+document.getElementById("answer").value ="33";
+}
+else{
+document.getElementById("answer").value ="28";
+
+}
+}
+</script>
+</head>
+<body>
+enter your month number:<input id="first"><br>
+<button onclick=months()>days in month</button><br>
+<input id="answer">
+</body>
+</html>

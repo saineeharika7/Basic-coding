@@ -1,0 +1,52 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//32
+function marks(){
+var a,b,c,d,e,total,percentage;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=Number(document.getElementById("third").value);
+d=Number(document.getElementById("fourth").value);
+e=Number(document.getElementById("fifth").value);
+total = (a+b+c+d+e);
+percentage =(total/500)*100;
+document.getElementById("answer1").value=percentage;
+
+if(percentage>=90){
+  document.getElementById("answer").value="A grade";
+}
+else if(percentage>=80){
+  document.getElementById("answer").value="B grade";
+}
+else if(percentage>=70){
+  document.getElementById("answer").value="C grade";
+}
+else if(percentage>=60){
+  document.getElementById("answer").value="D grade";
+}
+else if(percentage>=40){
+  document.getElementById("answer").value="E grade";
+}
+else{
+  document.getElementById("answer").value="F grade";
+
+}
+}
+</script>
+</head>
+<body>
+Enter marks1:<input id ="first"><br>
+Enter marks2:<input id ="second"><br>
+Enter marks3:<input id ="third"><br>
+Enter marks4:<input id ="fourth"><br>
+Enter marks5:<input id ="fifth"><br>
+<button onclick = "marks()">marks</button><br>
+<input id ="answer">
+<input id ="answer1">
+
+
+</body>
+</html>

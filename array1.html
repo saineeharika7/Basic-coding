@@ -1,0 +1,26 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//62
+function array(){
+var array =[1,2,-3,4,5,-6,7];
+console.log(array);
+var array1 =[];
+for (var i=0;i<array.length;i++){
+  if(array[i]<0){
+    array1.push(array[i]);
+    document.getElementById('answer').value=array1;
+    console.log(array1);
+
+  }
+
+}
+}
+</script>
+</head>
+<body>
+<button onclick="array()">output</button><br>
+<input id ="answer">
+</body>
+</html>

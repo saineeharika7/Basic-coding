@@ -1,0 +1,27 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//29 problem
+function valied(){
+var side1 = Number(document.getElementById("first").value);
+var side2 = Number(document.getElementById("second").value);
+var side3 = Number(document.getElementById("third").value);
+if(side1 > (side2+side3) || side3 > (side2+side1)||side2 > (side1+side3) ){
+document.getElementById("answer").value ="valid";
+}
+else{
+document.getElementById("answer").value ="not valid";
+
+}
+}
+</script>
+</head>
+<body>
+enter angle1:<input id= "first"><br>
+enter angle2:<input id ="second"><br>
+enter angle3:<input id ="third"><br>
+<button onclick ="valied()">triangleis valied or not</button><br>
+<input id ="answer">
+</body>
+</html>

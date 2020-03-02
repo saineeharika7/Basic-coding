@@ -1,0 +1,30 @@
+<!DOCTYPE.HTML>
+<html>
+<head>
+<script>
+//37
+function max(){
+  var num1 =Number(document.getElementById('first').value);
+  var num2 =Number(document.getElementById('second').value);
+
+  switch(num1>num2)
+      {
+          case true:
+              document.getElementById("answer").value =num1;
+              break;
+          case false:
+                document.getElementById("answer").value =num2;
+                 break;
+
+      }
+}
+</script>
+</head>
+<body>
+enter your num1:<input id="first"><br>
+enter your num2:<input id="second"><br>
+
+<button onclick="max()">maximum number</button><br>
+<input id="answer">
+</body>
+</html>

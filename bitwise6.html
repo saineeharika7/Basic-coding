@@ -1,0 +1,27 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//46
+function bitwise1(){
+var a =Number(document.getElementById("first").value);
+var b =Number(document.getElementById("second").value);
+var c= a.toString(2);
+if(c[b]==1){
+document.getElementById("answer").value =(c[b]=0);
+}
+else{
+document.getElementById("answer").value =(c[b]=1);
+
+}
+}
+</script>
+</head>
+<body>
+Enter the  number:<input id ="first"><br>
+Enter the term u need:<input id ="second"><br>
+
+<button onclick = "bitwise1()">output</button><br>
+<input id ="answer">
+</body>
+</html>

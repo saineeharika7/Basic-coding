@@ -1,0 +1,28 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//30
+function root(){
+var a =Number(document.getElementById("first").value);
+var b =Number(document.getElementById("second").value);
+var c =Number(document.getElementById("third").value);
+var root1 = ((-b) +((b**2) - (4*a*c))**(0.5))/(2*a);
+var root2 = ((-b) -((b**2) - (4*a*c))**(0.5))/(2*a);
+document.getElementById("answer").value=root1;
+document.getElementById("answer1").value=root2;
+
+}
+</script>
+</head>
+<body>
+Enter the first number:<input id ="first"><br>
+Enter the second number:<input id ="second"><br>
+Enter the third number:<input id ="third"><br>
+
+<button onclick = "root()">Roots</button><br>
+<input id ="answer">
+<input id ="answer1">
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE.HTML>
+<html>
+<head>
+<script>
+//34
+function months(month){
+  switch(month)
+      {
+          case 1:
+              document.getElementById("answer").value ="31 days";
+              break;
+          case 2:
+                document.getElementById("answer").value ="28/29 days";
+                 break;
+          case 3:
+            document.getElementById("answer").value ="31 days";
+                break;
+          case 4:
+          document.getElementById("answer").value ="30 days";
+
+              break;
+          case 5:
+          document.getElementById("answer").value ="31 days";
+
+              break;
+          case 6:
+          document.getElementById("answer").value ="30 days";
+
+              break;
+          case 7:
+          document.getElementById("answer").value ="31 days";
+
+              break;
+          case 8:
+          document.getElementById("answer").value ="31 days";
+
+              break;
+          case 9:
+          document.getElementById("answer").value ="30 days";
+
+              break;
+          case 10:
+          document.getElementById("answer").value ="31 days";
+
+              break;
+          case 11:
+              document.getElementById("answer").value ="30 days";
+              break;
+          case 12:
+              document.getElementById("answer").value ="31 days";
+              break;
+          default:
+            document.getElementById("answer").value ="Invalid input! Please enter month number between 1-12";
+
+      }
+}
+</script>
+</head>
+<body>
+enter your month number:<input id="first"><br>
+<button onclick="months(parseInt(document.getElementById('first').value));">days in month</button><br>
+<input id="answer">
+</body>
+</html>

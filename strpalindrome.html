@@ -1,0 +1,25 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//57
+function strings(){
+var a,c;
+a=document.getElementById("first").value;
+c = a.split('').reverse("").join("");
+if(a==c){
+document.getElementById("answer").value="given string is a palindrome";
+}
+else{
+document.getElementById("answer").value="given string is not a palindrome";
+
+}
+}
+</script>
+</head>
+<body>
+Enter the  string:<input id ="first"><br>
+<button onclick = "strings()">output</button><br>
+<input id ="answer">
+</body>
+</html>

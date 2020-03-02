@@ -1,0 +1,40 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//40
+function calculator(){
+var select =Number(document.getElementById("zero").value);
+var a =Number(document.getElementById("first").value);
+var b =Number(document.getElementById("second").value);
+var c
+switch(select){
+case 1:
+c =a+b;
+document.getElementById("answer").value=c;
+break;
+case 2:
+c =a-b;
+document.getElementById("answer").value=c;
+break;
+case 3:
+c =a*b;
+document.getElementById("answer").value=c;
+break;
+case 4:
+c =a/b;
+document.getElementById("answer").value=c;
+break;
+}
+}
+</script>
+</head>
+<body>
+select your operation 1.add 2.sub 3.mul 4.div:<input id ="zero"><br>
+Enter the first number:<input id ="first"><br>
+Enter the second number:<input id ="second"><br>
+
+<button onclick = "calculator()">calculator</button><br>
+<input id ="answer">
+</body>
+</html>

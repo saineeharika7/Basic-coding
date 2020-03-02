@@ -1,0 +1,32 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//48
+function bitwise1(){
+var a =Number(document.getElementById("first").value);
+var count =0;
+var count1 =0;
+var c= a.toString(2);
+for(var i=0;i<c.length;i++){
+if(c[i]==1){
+document.getElementById("answer").value ="number of ones are:" +(count +=1);
+}
+else{
+document.getElementById("answer1").value ="number of zeros are:" +(count1 +=1);
+
+}
+
+}
+}
+</script>
+</head>
+<body>
+Enter the  number:<input id ="first"><br>
+
+<button onclick = "bitwise1()">output</button><br>
+<input id ="answer">
+<input id ="answer1">
+
+</body>
+</html>

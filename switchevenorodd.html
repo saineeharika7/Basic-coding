@@ -1,0 +1,25 @@
+<!DOCTYPE.HTML>
+<html>
+<head>
+<script>
+//36
+function even(num){
+  switch(num%2)
+      {
+          case 0:
+              document.getElementById("answer").value ="even";
+              break;
+          case 1:
+                document.getElementById("answer").value ="odd";
+                 break;
+
+      }
+}
+</script>
+</head>
+<body>
+enter your num:<input id="first"><br>
+<button onclick="even(parseInt(document.getElementById('first').value));">even or odd</button><br>
+<input id="answer">
+</body>
+</html>

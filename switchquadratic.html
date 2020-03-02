@@ -1,0 +1,31 @@
+
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//39
+function root(){
+var a =Number(document.getElementById("first").value);
+var b =Number(document.getElementById("second").value);
+var c =Number(document.getElementById("third").value);
+var discriminant = (b * b) - (4 * a * c);
+switch(discriminant){
+  case 1:
+  var root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+  document.getElementById("answer").value=root1;
+  var root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+ document.getElementById("answer1").value=root2;
+}
+}
+</script>
+</head>
+<body>
+Enter the first number:<input id ="first"><br>
+Enter the second number:<input id ="second"><br>
+Enter the third number:<input id ="third"><br>
+
+<button onclick = "root()">Roots</button><br>
+<input id ="answer">
+<input id ="answer1">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//41
+function bitwise1(){
+var a =Number(document.getElementById("first").value);
+var c= a.toString(2);
+var d =c.length;
+if(c[d-1]==1){
+document.getElementById("answer").value ="set";
+}
+else{
+  document.getElementById("answer").value ="not set";
+
+}
+}
+</script>
+</head>
+<body>
+Enter the first number:<input id ="first"><br>
+<button onclick = "bitwise1()">output</button><br>
+<input id ="answer">
+</body>
+</html>

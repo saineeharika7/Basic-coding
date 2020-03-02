@@ -1,0 +1,28 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<script>
+//59
+function strings(){
+var a,b;
+a=document.getElementById("first").value;
+b=document.getElementById("second").value;
+for(var i=0;i<a.length;i++){
+if(a[i]==b){
+
+document.getElementById("answer").value="Last occurance of "+ b + " is " +i;
+
+}
+console.log(i);
+}
+}
+</script>
+</head>
+<body>
+Enter the  string:<input id ="first"><br>
+Enter the  character:<input id ="second"><br>
+
+<button onclick = "strings()">output</button><br>
+<input id ="answer">
+</body>
+</html>
